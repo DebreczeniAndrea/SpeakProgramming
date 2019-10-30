@@ -34,20 +34,21 @@
             <h2>Get In Contact:</h2>
             <p id="contactText"></p> <br>
         </div>
-        <div id="formItems">
-            <form id="myForm" name="form">                 <!--action="https://formspree.io/d.andrea02@yahoo.com"  method="POST"-->
+        <div id="formItems"  >
+            <form id="myForm" name="form" action="https://formspree.io/d.andrea02@yahoo.com"  method="POST">                 <!--action="https://formspree.io/d.andrea02@yahoo.com"  method="POST"-->
                 <label for="name"><b>Name:</b></label><br><br>
                 <input  type="text" placeholder="Enter your name" id="name" name="name"><br>
                 <p id="nameErrorMessage" style="color: red;"></p><br>
                 <label for="mail"><b>E-mail:</b></label><br><br>
-                <input type="email" placeholder="Enter your email" id="mail" name="email"><br>
+                <input type="email" placeholder="Enter your email" id="mail" name="email" onchange="emailvalidations()"><br>
                 <p id="mailErrorMessage" style="color: red;"></p><br>
                 <span id="emailValidationResult" style="color: red;"></span><br>
                 <label for="message" ><b>Message:</b></label><br><br>
                 <textarea placeholder="Your Message" rows="6" cols="40" maxlength="100" id="message" name="message"></textarea>
                 <p id="errorMessage" style="color: red;"></p>
                 <br>
-                <button class="sendButton" value="Submit" type="submit" onclick="formValidation()" ><b>Send Message</b></button>
+                <input type="submit" value="Send">
+                <button id="sendButton" class="sendButton" type="submit" value="Send" disabled><b>Send Message</b></button>
                 <p id="errorMessage4" style="color: red;></p>
             </form>
        </div>

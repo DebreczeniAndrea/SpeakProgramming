@@ -1,4 +1,4 @@
-function formValidation() {
+var Validation =(function () {
     var nameError, mailError, messageError;
     var nameErrorMessage = "Please write your name";
     var mailErrorMessage = "Please write your email";
@@ -19,22 +19,24 @@ function formValidation() {
             document.getElementById("myForm").reset(); //reseteaza formal cand dam click to alert message
         }
     }
-    checkIfInputValueIsEmpty(nameError, "nameErrorMessage", nameErrorMessage);
-    checkIfInputValueIsEmpty(mailError, "mailErrorMessage", mailErrorMessage);
-    checkIfInputValueIsEmpty(messageError, "errorMessage", errorMessage);
-    checkIfInputValueIsNotEmpty(nameError, mailError, messageError);
-    function myEmailValidateFunction(){
+    // checkIfInputValueIsEmpty(nameError, "nameErrorMessage", nameErrorMessage);
+    // checkIfInputValueIsEmpty(mailError, "mailErrorMessage", mailErrorMessage);
+    // checkIfInputValueIsEmpty(messageError, "errorMessage", errorMessage);
+    // checkIfInputValueIsNotEmpty(nameError, mailError, messageError);
+    this.emailvalidations = function (){
         var emailCheck = document.getElementById('mail').value;
         var pattern = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
         if (pattern.test(emailCheck)){
             document.getElementById('emailValidationResult').innerHTML = "";
+            document.getElementById("sendButton").disabled = false;
         }else{
             document.getElementById('emailValidationResult').innerHTML = "Email is not correct";
+            document.getElementById("sendButton").disabled = true;
             return false;
         }
-    }
-    myEmailValidateFunction();
-}
+    };
+    return this;
+})();
 
 //TODO: find a more suggestive variable name DONE
 //TODO: call function with right params DONE

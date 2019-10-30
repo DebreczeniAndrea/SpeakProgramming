@@ -58,7 +58,7 @@
     padding: 15px;
     border-radius: 15px;
 }
-input, textarea{
+input, textarea{   /* inputot kicserlni class-ra es azt hasznalni itt az input helyett*/
     width: 40%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -69,7 +69,7 @@ input, textarea{
 #formItems{
     text-align: center;
 }
-button{
+button{     /*itt button helyett majd az inputot hasznalni*/
     width: 10%;
     background-color: gold;
     color: black;
