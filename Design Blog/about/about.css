@@ -26,7 +26,7 @@
     justify-content: space-around;
 }
 .container {
-    padding-top: 150px;
+    padding-top: 100px;
 }
 .container h2{
     text-align: center;
@@ -38,4 +38,19 @@
 #me{
     width: 30%;
     padding: 10px;
+}
+@media screen and (max-width: 500px) {
+    .navigationBar{
+        display: grid;
+    }
+    #me{
+        width: 350px;
+        height: 100%;
+    }
+    .card{
+        display: block;
+    }
+    .container p{
+       text-align: center;
+    }
 }

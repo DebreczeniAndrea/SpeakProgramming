@@ -1,5 +1,5 @@
 body{
-    background-color: lightgray;
+    background-color: #f0f0f0;
     font-family: 'Open Sans', sans-serif;
     height: 100%; /* websiteul sa aiba 100% din browserul inaltimea*/
     margin: 0;
@@ -30,11 +30,9 @@ li{
     text-decoration: none;
     color: black;
 }
-
 .navItem a:hover{
     color: gold;
 }
-
 .imageContainer{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/homepage.jpg");
     width: 100%;
@@ -85,8 +83,8 @@ li{
 }
 .icons{
     color: #ffd700;
+    font-size: 25px;
 }
-
 .footer{
     background-color: white;
     left: 0;
@@ -101,7 +99,6 @@ li{
     font-size: 30px;
     color: black;
 }
-
 .footerContinut a:hover{
     color: gold;
 }
@@ -111,8 +108,21 @@ li{
     text-align:right;
     padding-bottom: 10px;
 }
-
+.contactFooter{
+    font-size: 20px;
+}
 #followUs{
     font-size: 20px;
     padding-top: 15px;
+}
+@media screen and (max-width: 500px) {
+    #serviceLinks{
+         width: 430px;
+     }
+    .navigationBar{
+        display: grid;
+    }
+    .serviceContainer{
+        display: block;
+    }
 }

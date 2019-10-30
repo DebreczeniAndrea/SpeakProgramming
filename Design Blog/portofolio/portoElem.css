@@ -1,0 +1,79 @@
+#headerContainer {
+    background-color: white;
+}
+#logo{
+    height: 60px;
+    width: 60px;
+    float: left;
+}
+#logo img {
+    width: 100%;
+}
+#navigationBar{
+    list-style-type: none;
+}
+li{
+    display: inline;
+}
+h2{
+    text-align: center;
+}
+
+#myLinkContainer{
+    text-align: center;
+}
+#myLinkContainer a{
+    text-decoration: none;
+    border-right: 3px solid ;
+    color: black;
+    padding-right: 10px;
+}
+#myLinkContainer a:hover{
+    color: #DAA520;
+}
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+.row {
+    margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 30px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+    width: 350px;
+    height: 600px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+#services img{
+    width: 350px;
+    height: 450px;
+    text-align: center;
+}

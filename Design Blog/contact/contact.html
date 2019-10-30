@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="../homePage/homePage.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <!--HEADER START-->
@@ -30,19 +32,25 @@
     <div id="formDiv">
         <div id="formText">
             <h2>Get In Contact:</h2>
-            <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu<br>
-                ut qui dolor oratio mnesarchum ea utamur impetus fuisset nam nostrud euismod volumus ne mei.</p> <br>
+            <p id="contactText"></p> <br>
         </div>
         <div id="formItems">
-    <label for="name"><b>Name:</b></label><br><br>
-    <input type="text" placeholder="Enter your name" id="name" required><br><br>
-    <label for="mail"><b>E-mail:</b></label><br><br>
-    <input type="email" placeholder="Enter your email" id="mail" required><br><br>
-    <label for="message" ><b>Message:</b></label><br><br>
-    <textarea placeholder="Your Message" id="message" rows="6" cols="40" maxlength="100"></textarea>
-    <br>
-        <button type="submit" class="sendButton" onclick=""><b>Send Message</b></button>
-        </div>
+            <form id="myForm" name="form">                 <!--action="https://formspree.io/d.andrea02@yahoo.com"  method="POST"-->
+                <label for="name"><b>Name:</b></label><br><br>
+                <input  type="text" placeholder="Enter your name" id="name" name="name"><br>
+                <p id="nameErrorMessage" style="color: red;"></p><br>
+                <label for="mail"><b>E-mail:</b></label><br><br>
+                <input type="email" placeholder="Enter your email" id="mail" name="email"><br>
+                <p id="mailErrorMessage" style="color: red;"></p><br>
+                <span id="emailValidationResult" style="color: red;"></span><br>
+                <label for="message" ><b>Message:</b></label><br><br>
+                <textarea placeholder="Your Message" rows="6" cols="40" maxlength="100" id="message" name="message"></textarea>
+                <p id="errorMessage" style="color: red;"></p>
+                <br>
+                <button class="sendButton" value="Submit" type="submit" onclick="formValidation()" ><b>Send Message</b></button>
+                <p id="errorMessage4" style="color: red;></p>
+            </form>
+       </div>
     </div>
 </section>
 <section id="myContactDetails">
@@ -50,19 +58,30 @@
     <div id="contactContainer">
     <p><i class="fas fa-at fa-2x circle-icon "></i><br><br><b> Email</b> <br><br>contactus@gmail.com</p>
     <p><i class="fas fa-mobile-alt fa-2x circle-icon"></i><br><br><b> Phone number</b>  <br><br>075276899</p>
-    <p><i class="fas fa-map-marked-alt fa-2x circle-icon"></i><br><br><b> Adress</b>  <br><br>Cluj-Napoca, Str.Fabricii, Nr.5</p>
+    <p><i class="fas fa-map-marked-alt fa-2x circle-icon"></i><br><br><b> Address</b>  <br><br>Cluj-Napoca, Str.Fabricii, Nr.5</p>
     </div>
 </section>
 </div>
 <!--FOOTER START-->
 <footer class="footer">
     <div class="footerContinut">
-        <p id="followUs"><b>Follow Us:</b></p>
-        <a id="facebookLogo" href="#"><i class="fab fa-facebook-square"></i></a>
-        <a id="instaLogo" href="#"><i class="fab fa-instagram"></i></a>
-        <p id="footerText">Designed by Debreczeni Andrea</p>
+        <div class="footerFollowUs">
+            <h3 id="followUs"><b>Follow Us</b></h3>
+            <p>On Facebook: <a id="facebookLogo" href="#"><i class="fab fa-facebook-square"></i></a></p>
+            <p>On Instagram: <a id="instaLogo" href="#"><i class="fab fa-instagram"></i></a></p>
+        </div>
+        <div class="footerContactUs">
+            <h3>Contact Us</h3>
+            <p><b>Email: </b>contactus@gmail.com</p>
+            <p><b> Phone number: </b>075276899</p>
+        </div>
+        <div class="footerDesignBy">
+            <p id="footerText">Designed by Debreczeni Andrea</p>
+        </div>
     </div>
 </footer>
 <!--FOOTER END-->
+<script src="contact.js"></script>
+<script src="validation.js"></script>
 </body>
 </html>

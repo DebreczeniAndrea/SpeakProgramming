@@ -6,6 +6,8 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="homePage.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
@@ -33,42 +35,31 @@
 <!--SERVICE CONTAINER START-->
 <div id="services">
 <h2 id="serviceTitle">My Service:</h2>
-<section class="serviceContainer">
-    <div class="services">
-        <h2><i class="fas fa-envelope-open-text icons"></i> Invitation Design</h2>
-        <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div class="services">
-        <h2><i class="far fa-lightbulb icons"></i> Logo Design</h2>
- <p id="textJs"></p>
-    </div>
-    <div class="services">
-        <h2><i class="far fa-file-image icons"></i> Poster Design</h2>
-        <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div class="services">
-        <h2><i class="fas fa-volume-up icons"></i> Advertisement Design</h2>
-        <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-</section>
+    <section class="serviceContainer">
+    </section>
+    <div class="textHtml"></div>
 </div>
 <!--SERVICE CONTAINER END-->
 <!--FOOTER START-->
 <footer class="footer">
     <div class="footerContinut">
-    <p id="followUs"><b>Follow Us:</b></p>
-    <a id="facebookLogo" href="#"><i class="fab fa-facebook-square"></i></a>
-    <a id="instaLogo" href="#"><i class="fab fa-instagram"></i></a>
-    <p id="footerText">Designed by Debreczeni Andrea</p>
+        <div class="footerFollowUs">
+            <h3 id="followUs"><b><u>Follow Us</u></b></h3>
+            <p>On Facebook: <a id="facebookLogo" href="#"><i class="fab fa-facebook-square"></i></a></p>
+            <p>On Instagram: <a id="instaLogo" href="#"><i class="fab fa-instagram"></i></a></p>
+        </div>
+        <div class="footerContactUs">
+            <h3><u>Contact Us</u></h3>
+            <p><b>Email: </b>contactus@gmail.com</p>
+            <p><b> Phone number: </b>075276899</p>
+        </div>
+        <div class="footerDesignBy">
+            <p id="footerText">Designed by Debreczeni Andrea</p>
+        </div>
     </div>
 </footer>
 <!--FOOTER END-->
 <script src="../homePage.js"></script>
+<script src="../textHome.js"></script>
 </body>
 </html>

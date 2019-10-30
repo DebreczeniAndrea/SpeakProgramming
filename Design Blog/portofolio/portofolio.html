@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="../homePage/homePage.css">
     <link rel="stylesheet" href="portofolio.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
 <!--HEADER START-->
 <header id="headerContainer">
     <div id="logo">
@@ -23,26 +24,160 @@
 </header>
 <!--HEADER END-->
 <h1>My Portofolio</h1>
-<a href="#">Invitations</a>
-<a href="#">Logos</a>
-<a href="#">Posters</a>
-<a href="#">Advertisements</a>
-<h2><u>Invitations</u></h2>
-<img id="invitation1" src="../image/invitation1.jpg" alt="">
-<p><a href="invitations.html">See more..</a></p>
-<h2><u>Logos</u></h2>
-<h2><u>Posters</u></h2>
-<h2><u>Advertisements</u></h2>
-
+<div id="serviceLinks">
+    <button class="buttons active" data-filter="all">All</button>
+    <button class="buttons" data-filter="invitation">Invitations</button>
+    <button class="buttons" data-filter="logos">Logos</button>
+    <button class="buttons" data-filter="posters">Posters</button>
+    <button class="buttons" data-filter="advertisements">Advertisements</button>
+</div>
+<div id="elements">
+<section id="invitations">
+    <h2><u>Invitations</u></h2>
+    <div class="container" >
+        <div class="imageTextBox invi">
+            <a href="../image/invitation1.jpg"> <img class="invitation1" src="../image/invitation1.jpg" alt=""></a>
+            <h3>Lorem ipsum dolor sit</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Animi, quos, adipisci aliquid similique saepe ipsa minus <br>
+                maxime alias libero nam quis officia eum impedit.</p>
+        </div>
+        <div class="imageTextBox invi">
+            <a href="../image/invi2.jpg"> <img class="invitation1" src="../image/invi2.jpg" alt=""></a>
+            <h3>Lorem ipsum dolor sit</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Animi, quos, adipisci aliquid similique saepe ipsa minus <br>
+                maxime alias libero nam quis officia eum impedit.</p>
+        </div>
+        <div class="imageTextBox invi">
+            <a href="../image/invi3.jpg"><img class="invitation1" src="../image/invi3.jpg" alt=""></a>
+            <h3>Lorem ipsum dolor sit</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Animi, quos, adipisci aliquid similique saepe ipsa minus <br>
+                maxime alias libero nam quis officia eum impedit.</p>
+        </div>
+        <div class="imageTextBox invi">
+            <a href="../image/invi4.jpg"><img class="invitation1" src="../image/invi4.jpg" alt=""></a>
+            <h3>Lorem ipsum dolor sit</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Animi, quos, adipisci aliquid similique saepe ipsa minus <br>
+                maxime alias libero nam quis officia eum impedit.</p>
+        </div>
+        <div class="imageTextBox invi">
+            <a href="../image/invi5.jpg"><img class="invitation1" src="../image/invi5.jpg" alt=""></a>
+            <h3>Lorem ipsum dolor sit</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Animi, quos, adipisci aliquid similique saepe ipsa minus <br>
+                maxime alias libero nam quis officia eum impedit.</p>
+        </div>
+        <div class="imageTextBox invi">
+            <a href="../image/invi6.jpg"> <img class="invitation1" src="../image/invi6.jpg" alt=""></a>
+            <h3>Lorem ipsum dolor sit</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Animi, quos, adipisci aliquid similique saepe ipsa minus <br>
+                maxime alias libero nam quis officia eum impedit.</p>
+        </div>
+    </div>
+</section>
+<section id="logos">
+    <h2><u>Logos</u></h2>
+    <div class="container">
+        <div class="imageTextBox logo">
+            <a href=""> <img class="logo1" src="../image/l1.png" alt=""></a>
+            <h3>Lorem ipsum dolor sit</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Animi, quos, adipisci aliquid similique saepe ipsa minus <br>
+                maxime alias libero nam quis officia eum impedit.</p>
+        </div>
+        <div class="imageTextBox logo">
+            <a href="../image/l2.jpg"><img class="logo1" src="../image/l2.jpg" alt=""></a>
+        <h3>Lorem ipsum dolor sit</h3>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+            Animi, quos, adipisci aliquid similique saepe ipsa minus <br>
+            maxime alias libero nam quis officia eum impedit.</p>
+        </div>
+        <div class="imageTextBox logo">
+            <a href="../image/l3.jpg"><img class="logo1" src="../image/l3.jpg" alt=""></a>
+        <h3>Lorem ipsum dolor sit</h3>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+            Animi, quos, adipisci aliquid similique saepe ipsa minus <br>
+            maxime alias libero nam quis officia eum impedit.</p>
+        </div>
+    </div>
+</section>
+<section id="posters">
+    <h2><u>Posters</u></h2>
+    <div class="container">
+        <div class="imageTextBox poster">
+            <a href="../image/p1.jpg"><img class="poster1" src="../image/p1.jpg" alt=""></a>
+            <h3>Lorem ipsum dolor sit</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Animi, quos, adipisci aliquid similique saepe ipsa minus <br>
+                maxime alias libero nam quis officia eum impedit.</p>
+        </div>
+        <div  class="imageTextBox poster">
+            <a href="../image/p2.jpg"> <img class="poster1" src="../image/p2.jpg" alt=""></a>
+            <h3>Lorem ipsum dolor sit</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Animi, quos, adipisci aliquid similique saepe ipsa minus <br>
+                maxime alias libero nam quis officia eum impedit.</p>
+         </div>
+        <div class="imageTextBox poster">
+            <a href="../image/p3.jpg"><img class="poster1" src="../image/p3.jpg" alt=""></a>
+            <h3>Lorem ipsum dolor sit</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Animi, quos, adipisci aliquid similique saepe ipsa minus <br>
+                maxime alias libero nam quis officia eum impedit.</p>
+        </div>
+    </div>
+</section>
+<section id="advertisements">
+    <h2><u>Advertisements</u></h2>
+    <div class="container">
+        <div class="imageTextBox advert">
+            <a href="../image/a1.jpg"><img id="adv1" src="../image/a1.jpg" alt=""></a>
+            <h3>Lorem ipsum dolor sit</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Animi, quos, adipisci aliquid similique saepe ipsa minus <br>
+                maxime alias libero nam quis officia eum impedit.</p>
+        </div>
+        <div class="imageTextBox advert">
+            <a href="../image/a2.jpg"><img id="adv2" src="../image/a2.jpg" alt=""></a>
+            <h3>Lorem ipsum dolor sit</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Animi, quos, adipisci aliquid similique saepe ipsa minus <br>
+                maxime alias libero nam quis officia eum impedit.</p>
+        </div>
+        <div class="imageTextBox advert">
+            <a href="../image/a3.jpg"><img id="adv3" src="../image/a3.jpg" alt=""></a>
+            <h3>Lorem ipsum dolor sit</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Animi, quos, adipisci aliquid similique saepe ipsa minus <br>
+                maxime alias libero nam quis officia eum impedit.</p>
+        </div>
+    </div>
+</section>
+</div>
 <!--FOOTER START-->
 <footer class="footer">
     <div class="footerContinut">
-        <p id="followUs"><b>Follow Us:</b></p>
-        <a id="facebookLogo" href="#"><i class="fab fa-facebook-square"></i></a>
-        <a id="instaLogo" href="#"><i class="fab fa-instagram"></i></a>
-        <p id="footerText">Designed by Debreczeni Andrea</p>
+        <div class="footerFollowUs">
+            <h3 id="followUs"><b><u>Follow Us</u></b></h3>
+            <p>On Facebook: <a id="facebookLogo" href="#"><i class="fab fa-facebook-square"></i></a></p>
+            <p>On Instagram: <a id="instaLogo" href="#"><i class="fab fa-instagram"></i></a></p>
+        </div>
+        <div class="footerContactUs">
+            <h3><u>Contact Us</u></h3>
+            <p><b>Email: </b>contactus@gmail.com</p>
+            <p><b> Phone number: </b>075276899</p>
+        </div>
+        <div class="footerDesignBy">
+            <p id="footerText">Designed by Debreczeni Andrea</p>
+        </div>
     </div>
 </footer>
 <!--FOOTER END-->
 </body>
 </html>
+
+<script src="portoElem.js"></script>
