@@ -35,7 +35,8 @@
             <p id="contactText"></p> <br>
         </div>
         <div id="formItems"  >
-            <form id="myForm" name="form" action="https://formspree.io/d.andrea02@yahoo.com"  method="POST">                 <!--action="https://formspree.io/d.andrea02@yahoo.com"  method="POST"-->
+            <!--action="https://formspree.io/d.andrea02@yahoo.com"  method="POST" cu ajutorul acest metod primim raspunsurile in email-->
+            <form id="myForm" name="form" action="https://formspree.io/d.andrea02@yahoo.com"  method="POST">                 
                 <label for="name"><b>Name:</b></label><br><br>
                 <input  type="text" placeholder="Enter your name" id="name" name="name"><br>
                 <p id="nameErrorMessage" style="color: red;"></p><br>
@@ -47,9 +48,9 @@
                 <textarea placeholder="Your Message" rows="6" cols="40" maxlength="100" id="message" name="message"></textarea>
                 <p id="errorMessage" style="color: red;"></p>
                 <br>
-                <input type="submit" value="Send">
-                <button id="sendButton" class="sendButton" type="submit" value="Send" disabled><b>Send Message</b></button>
-                <p id="errorMessage4" style="color: red;></p>
+                <input class="sendButton" id="sendButton" type="submit" value="Send">
+                <!--<button  class="sendButton" type="submit" value="Send" disabled><b>Send Message</b></button>-->
+                <p id="sendButton" id="errorMessage4" style="color: red;></p>
             </form>
        </div>
     </div>
