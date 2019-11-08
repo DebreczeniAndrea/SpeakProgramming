@@ -58,7 +58,7 @@
     padding: 15px;
     border-radius: 15px;
 }
-input, textarea{   /* inputot kicserlni class-ra es azt hasznalni itt az input helyett*/
+#sendButton, input, textarea{   
     width: 40%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -69,7 +69,7 @@ input, textarea{   /* inputot kicserlni class-ra es azt hasznalni itt az input h
 #formItems{
     text-align: center;
 }
-button{     /*itt button helyett majd az inputot hasznalni*/
+#sendButton{    
     width: 10%;
     background-color: gold;
     color: black;
@@ -79,7 +79,7 @@ button{     /*itt button helyett majd az inputot hasznalni*/
     border-radius: 4px;
     cursor: pointer;
 }
-button:hover{
+#sendButton:hover{
     background-color: #DAA520;
 }
 @media screen and (max-width: 500px) {
